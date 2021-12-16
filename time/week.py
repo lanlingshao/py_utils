@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-def check_with_base_week(base_week, week):
+def compare_week(base_week, week):
     """
     :param week: "2021.34","2021.9"...
     :param base_week: like week

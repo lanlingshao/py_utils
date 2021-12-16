@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
 
-from time.week import check_with_base_week
+from time.week import compare_week
 
 
-def test_check_with_base_week():
+def test_compare_week():
     data_lst = [
         ("2021.3", "2021.2", -1),
         ("2021.03", "2021.02", -1),
@@ -23,4 +23,4 @@ def test_check_with_base_week():
     ]
 
     for base_week, week, want in data_lst:
-        assert check_with_base_week(base_week, week) == want
+        assert compare_week(base_week, week) == want
